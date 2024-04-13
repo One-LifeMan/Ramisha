@@ -1,5 +1,76 @@
 .header {
+    position: relative;
+    min-height: 100vh;
+    padding: $spacing-lg 0;
+    background-image: url("./../img/my-photo-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background: linear-gradient(
+            90deg,
+            rgb(0 0 0 / 100%) 0%,
+            rgb(255 255 255 / 0%) 100%
+        );
+    }
+
     &__inner {
-        
+        position: relative;
+        z-index: 1;
+    }
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-sm;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__download-btn {
+    }
+
+    &__bottom {
+        max-width: 60%;
+        margin-top: 20vh;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+    }
+
+    &__hello {
+    }
+
+    &__title {
+    }
+
+    &__desc {
+    }
+
+    &__buttons {
+        display: flex;
+        gap: $spacing-md;
+    }
+
+    &__hire-btn {
+    }
+
+    &__contact-btn {
+        color: $secondaryText;
+        background-color: $primaryText;
+
+        &:hover {
+            color: $accentColor;
+        }
     }
 }
