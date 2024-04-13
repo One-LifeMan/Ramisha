@@ -1,0 +1,84 @@
+@use "sass:map";
+
+$themes: (
+    light: (
+        "darkPrimaryColor": #DC3635,
+        "primaryColor": #D9D9D9,
+        "lightPrimaryColor": #FFECEC,
+        "textIcons": #DC3635,
+        "accentColor": #DC3635,
+        "primaryText": #FEF4E6,
+        "secondaryText": #000,
+        "dividerColor": #bdbdbd,
+        "errorColor": #f00,
+    ),
+    dark: (
+        "darkPrimaryColor": #0C0C0C,
+        "primaryColor": #0C0C0C,
+        "lightPrimaryColor": #FFECEC,
+        "textIcons": #DC3635,
+        "accentColor": #DC3635,
+        "primaryText": #FEF4E6,
+        "secondaryText": #000,
+        "dividerColor": #bdbdbd,
+        "errorColor": #ff4747,
+    ),
+);
+
+@function get-css-name($sassName) {
+    $cssNamesVars: (
+        "darkPrimaryColor": "--dark-primary-color",
+        "primaryColor": "--primary-color",
+        "lightPrimaryColor": "--light-primary-color",
+        "textIcons": "--text-icons",
+        "accentColor": "--accent-color",
+        "primaryText": "--primary-text",
+        "secondaryText": "--secondary-text",
+        "dividerColor": "--divider-color",
+        "errorColor": "--error-color",
+    );
+
+    @return map-get($cssNamesVars, $sassName);
+}
+
+@mixin set-theme($themes, $theme) {
+    @each $key, $value in map-get($themes, $theme) {
+        $newName: get-css-name($key);
+
+        #{$newName}: #{$value};
+    }
+}
+
+:root {
+    @include set-theme($themes, light);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        @include set-theme($themes, light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include set-theme($themes, dark);
+    }
+}
+
+html.theme-light {
+    @include set-theme($themes, light);
+}
+
+html.theme-dark {
+    @include set-theme($themes, dark);
+}
+
+$darkPrimaryColor: var(--dark-primary-color);
+$lightPrimaryColor: var(--light-primary-color);
+$primaryColor: var(--primary-color);
+$textIcons: var(--text-icons);
+$accentColor: var(--accent-color);
+$primaryText: var(--primary-text);
+$secondaryText: var(--secondary-text);
+$dividerColor: var(--divider-color);
+$errorColor: var(--error-color);

@@ -1,0 +1,40 @@
+$maxViewport: 1920;
+$minViewport: 320;
+$container: 1420px;
+$containerPadding: 10px;
+
+/* BORDERS */
+$btnBorderRadius: 1.6rem;
+
+/* SCROLLBAR */
+$scrollbarWidth: 8px;
+$scrollbarBorderRadius: 4px;
+
+/* SPACINGS */
+$spacing-xs: 0.9rem; // 15px
+$spacing-sm: 1.3rem; // 20px
+$spacing-md: 2rem; // 32px
+$spacing-lg: 4rem; // 64px
+$spacing-xl: 6rem; // 100px
+
+/* FONT */
+$htmlFontSize: 16px;
+$mainFontFamily: "Roboto";
+$mainFontSize: 24px;
+$mainFontStyle: normal;
+$mainFontWeight: 400;
+$mainLineHeight: 1;
+
+@mixin get-font-size($min, $max) {
+    /* prettier-ignore */
+    font-size: clamp(
+        $min * 1px,
+        $min * 1px + ($max - $min) * ((100vw - $minViewport * 1px) / ($maxViewport - $minViewport)),
+        $max * 1px
+    );
+}
+
+$uxSkillLineFill: 90%;
+$appSkillLineFill: 80%;
+$graphicSkillLineFill: 95%;
+$webSkillLineFill: 85%;
