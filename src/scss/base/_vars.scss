@@ -3,23 +3,20 @@ $minViewport: 320;
 $container: 1420px;
 $containerPadding: 10px;
 
-/* BORDERS */
-$btnBorderRadius: 1.6rem;
-
 /* SCROLLBAR */
 $scrollbarWidth: 8px;
 $scrollbarBorderRadius: 4px;
 
 /* SPACINGS */
-$spacing-xs: 0.9rem; // 15px
-$spacing-sm: 1.3rem; // 20px
-$spacing-md: 2rem; // 32px
+$spacing-xs: 1rem; // 16px
+$spacing-sm: 2rem; // 32px
+$spacing-md: 3rem; // 48px
 $spacing-lg: 4rem; // 64px
-$spacing-xl: 6rem; // 100px
+$spacing-xl: 8rem; // 128px
 
 /* FONT */
 $htmlFontSize: 16px;
-$mainFontFamily: "Roboto";
+$mainFontFamily: "Montserrat";
 $mainFontSize: 24px;
 $mainFontStyle: normal;
 $mainFontWeight: 400;
@@ -38,3 +35,4 @@ $uxSkillLineFill: 90%;
 $appSkillLineFill: 80%;
 $graphicSkillLineFill: 95%;
 $webSkillLineFill: 85%;
+$skillLineBorderWidth: 1px;

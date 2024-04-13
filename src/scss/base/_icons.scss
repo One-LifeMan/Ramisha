@@ -1,14 +1,16 @@
-// @font-face {
-//     font-family: icomoon;
-//     font-style: normal;
-//     font-weight: normal;
-//     src:  url('fonts/icomoon.eot?qvu9t0');
-//     src:  url('fonts/icomoon.eot?qvu9t0#iefix') format('embedded-opentype'),
-//         url('fonts/icomoon.ttf?qvu9t0') format('truetype'),
-//         url('fonts/icomoon.woff?qvu9t0') format('woff'),
-//         url('fonts/icomoon.svg?qvu9t0#icomoon') format('svg');
-//     font-display: block;
-// }
+@font-face {
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: normal;
+    src: url("./../fonts/icomoon/icomoon.eot?qvu9t0");
+    src:
+        url("./../fonts/icomoon/icomoon.eot?qvu9t0#iefix")
+            format("embedded-opentype"),
+        url("./../fonts/icomoon/icomoon.ttf?qvu9t0") format("truetype"),
+        url("./../fonts/icomoon/icomoon.woff?qvu9t0") format("woff"),
+        url("./../fonts/icomoon/icomoon.svg?qvu9t0#icomoon") format("svg");
+    font-display: block;
+}
 
 [class^="icon-"],
 [class*=" icon-"] {

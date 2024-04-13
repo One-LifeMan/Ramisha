@@ -1,0 +1,31 @@
+.social {
+    color: $textIcons;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: $spacing-sm;
+        column-gap: $spacing-lg;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        &:hover {
+            color: $secondaryText;
+        }
+    }
+}
+
+.icon-facebook {
+}
+
+.icon-twitter {
+}
+
+.icon-instagram {
+}
+
+.icon-linkedin {
+}

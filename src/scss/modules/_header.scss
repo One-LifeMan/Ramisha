@@ -34,7 +34,15 @@
         justify-content: space-between;
     }
 
+    &__logo {
+    }
+
+    & .logo__text {
+        fill: $primaryText;
+    }
+
     &__download-btn {
+        font-weight: 500;
     }
 
     &__bottom {
@@ -49,6 +57,9 @@
     }
 
     &__hello {
+        font-size: 96px;
+        font-weight: 600;
+        color: $accentColor;
     }
 
     &__title {
@@ -66,7 +77,7 @@
     }
 
     &__contact-btn {
-        color: $secondaryText;
+        color: #000;
         background-color: $primaryText;
 
         &:hover {

@@ -1,2 +1,357 @@
 .main {
+    color: $secondaryText;
+}
+
+/* ======================================== about ======================================== */
+.about {
+    &__inner {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-sm;
+    }
+
+    &__img-block {
+        grid-row: 1/4;
+        grid-column: 1;
+    }
+
+    &__img {
+    }
+
+    &__title {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    &__desc {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    &__skills {
+        grid-row: 3;
+        grid-column: 2;
+    }
+}
+
+.skill {
+    &__group {
+        margin-bottom: $spacing-sm;
+    }
+
+    &__title {
+        margin-bottom: $spacing-sm;
+    }
+
+    &__empty-line {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 20px;
+        background-color: $lightPrimaryColor;
+        border: $skillLineBorderWidth solid $accentColor;
+    }
+
+    &__filled-line {
+        position: absolute;
+        top: -$skillLineBorderWidth;
+        right: -$skillLineBorderWidth;
+        bottom: -$skillLineBorderWidth;
+        left: -$skillLineBorderWidth;
+        z-index: 2;
+        background-color: $accentColor;
+        border: $skillLineBorderWidth solid $accentColor;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 3;
+        width: 25px;
+        height: 25px;
+        background-color: $lightPrimaryColor;
+        border: $skillLineBorderWidth solid $accentColor;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.ux-line {
+    width: $uxSkillLineFill;
+}
+
+.app-line {
+    width: $appSkillLineFill;
+}
+
+.graphic-line {
+    width: $graphicSkillLineFill;
+}
+
+.web-line {
+    width: $webSkillLineFill;
+}
+
+.ux-circle {
+    left: $uxSkillLineFill;
+}
+
+.app-circle {
+    left: $appSkillLineFill;
+}
+
+.graphic-circle {
+    left: $graphicSkillLineFill;
+}
+
+.web-circle {
+    left: $webSkillLineFill;
+}
+
+/* ======================================== services ======================================== */
+
+.services {
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: $spacing-sm;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-bottom: $spacing-md;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-sm;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+    }
+}
+
+.service-card {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    max-width: 300px;
+    padding: $spacing-xs;
+    background-color: $lightPrimaryColor;
+    border-radius: 10px;
+    transition: all 0.8s ease-out 0.3s;
+
+    &:hover {
+        transition: all 0.3s ease-out 0s;
+        transform: rotate(6deg);
+    }
+
+    &:nth-child(even) {
+        &:hover {
+            transform: rotate(-6deg);
+        }
+    }
+
+    &__icon {
+        padding-bottom: 100px;
+        margin-bottom: $spacing-sm;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__title {
+        margin-bottom: $spacing-sm;
+    }
+
+    &__desc {
+    }
+}
+
+.ux-icon {
+    background-image: url("../img/icons/ux.svg");
+}
+
+.app-icon {
+    background-image: url("../img/icons/app.svg");
+}
+
+.graphic-icon {
+    background-image: url("../img/icons/graphics.svg");
+}
+
+.web-icon {
+    background-image: url("../img/icons/web.svg");
+}
+
+/* ======================================== projects ======================================== */
+
+.projects {
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: $spacing-sm;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-bottom: $spacing-md;
+        text-align: center;
+    }
+
+    &__filter {
+    }
+
+    &__results {
+    }
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: auto;
+
+    &__btn {
+        padding: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: $lightPrimaryColor;
+        border: 1px solid $lightPrimaryColor;
+        border-radius: 4px;
+
+        &._active {
+            color: $primaryText;
+            background-color: $accentColor;
+        }
+
+        &:hover {
+            border-color: $accentColor;
+        }
+    }
+}
+
+/* ======================================== testimonials ======================================== */
+
+.testimonials {
+    color: $lightPrimaryColor;
+    background-color: $darkPrimaryColor;
+
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: $spacing-sm;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-bottom: $spacing-md;
+        text-align: center;
+    }
+
+    &__slider {
+    }
+}
+
+/* ======================================== contact ======================================== */
+
+.contact {
+    color: $lightPrimaryColor;
+    background-color: $darkPrimaryColor;
+
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: $spacing-sm;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-bottom: $spacing-md;
+        text-align: center;
+    }
+
+    &__form {
+    }
+}
+
+.contact-form {
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-sm;
+        justify-content: center;
+    }
+
+    &__email {
+        width: 100%;
+        max-width: 630px;
+        padding: $spacing-sm $spacing-sm;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid $lightPrimaryColor;
+
+        &:focus {
+            border-color: $secondaryText;
+            outline: none;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        z-index: 2;
+        padding: $spacing-sm $spacing-lg;
+        font-weight: 600;
+        color: $darkPrimaryColor;
+        cursor: pointer;
+        background-color: #fff0;
+        border: 1px solid $lightPrimaryColor;
+    }
+
+    &__btn-wrap {
+        position: relative;
+        display: flex;
+        background-color: $lightPrimaryColor;
+
+        &:hover {
+            .contact-form__btn-inner {
+                width: 100%;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__btn-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        visibility: hidden;
+        background-color: $accentColor;
+        transition: all 0.8s ease-out 0s;
+
+        & > span {
+            position: absolute;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: $spacing-sm $spacing-lg;
+            font-weight: 600;
+            color: $primaryText;
+            border: 1px solid $primaryText;
+        }
+    }
 }

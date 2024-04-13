@@ -17,27 +17,31 @@
                 <div class="about__skills skill">
                     <div class="skill__group">
                         <h4 class="skill__title">UX Design</h4>
-                        <div class="skill__empty-line"></div>
-                        <div class="skill__filled-line"></div>
-                        <div class="skill__circle"></div>
+                        <div class="skill__empty-line">
+                            <div class="skill__filled-line ux-line"></div>
+                            <div class="skill__circle ux-circle"></div>
+                        </div>
                     </div>
                     <div class="skill__group">
                         <h4 class="skill__title">App Design</h4>
-                        <div class="skill__empty-line"></div>
-                        <div class="skill__filled-line"></div>
-                        <div class="skill__circle"></div>
+                        <div class="skill__empty-line">
+                            <div class="skill__filled-line app-line"></div>
+                            <div class="skill__circle app-circle"></div>
+                        </div>
                     </div>
                     <div class="skill__group">
-                        <h4 class="skill__title">App Design</h4>
-                        <div class="skill__empty-line"></div>
-                        <div class="skill__filled-line"></div>
-                        <div class="skill__circle"></div>
+                        <h4 class="skill__title">Graphic Design</h4>
+                        <div class="skill__empty-line">
+                            <div class="skill__filled-line graphic-line"></div>
+                            <div class="skill__circle graphic-circle"></div>
+                        </div>
                     </div>
                     <div class="skill__group">
                         <h4 class="skill__title">Web Design</h4>
-                        <div class="skill__empty-line"></div>
-                        <div class="skill__filled-line"></div>
-                        <div class="skill__circle"></div>
+                        <div class="skill__empty-line">
+                            <div class="skill__filled-line web-line"></div>
+                            <div class="skill__circle web-circle"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,7 +58,7 @@
                 </p>
                 <div class="services__cards">
                     <div class="services__card service-card">
-                        <div class="service-card__icon"></div>
+                        <div class="service-card__icon ux-icon"></div>
                         <h3 class="service-card__title">UI/UX Design</h3>
                         <p class="service-card__desc">
                             Lorem ipsum dolor sit amet consectetur. Morbi diam
@@ -62,7 +66,7 @@
                         </p>
                     </div>
                     <div class="services__card service-card">
-                        <div class="service-card__icon"></div>
+                        <div class="service-card__icon app-icon"></div>
                         <h3 class="service-card__title">App Design</h3>
                         <p class="service-card__desc">
                             Lorem ipsum dolor sit amet consectetur. Morbi diam
@@ -70,7 +74,7 @@
                         </p>
                     </div>
                     <div class="services__card service-card">
-                        <div class="service-card__icon"></div>
+                        <div class="service-card__icon graphic-icon"></div>
                         <h3 class="service-card__title">Graphic Design</h3>
                         <p class="service-card__desc">
                             Lorem ipsum dolor sit amet consectetur. Morbi diam
@@ -78,7 +82,7 @@
                         </p>
                     </div>
                     <div class="services__card service-card">
-                        <div class="service-card__icon"></div>
+                        <div class="service-card__icon web-icon"></div>
                         <h3 class="service-card__title">Web Design</h3>
                         <p class="service-card__desc">
                             Lorem ipsum dolor sit amet consectetur. Morbi diam
@@ -101,8 +105,8 @@
 
                 <div class="projects__filter filter">
                     <button class="filter__btn" data-filter="All">All</button>
-                    <button class="filter__btn" data-filter="">
-                        UUXI/UX Design
+                    <button class="filter__btn _active" data-filter="UX">
+                        UI/UX Design
                     </button>
                     <button class="filter__btn" data-filter="App">
                         App Design
@@ -147,8 +151,12 @@
     <section class="contact">
         <div class="container">
             <div class="contact__inner">
-                <h2 class="contact__title"></h2>
-                <p class="contact__desc"></p>
+                <h2 class="contact__title">Contact me</h2>
+                <p class="contact__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+                    dignissim, metus nec fringilla accumsan.
+                </p>
                 <form
                     class="contact__form contact-form"
                     name="contactForm"
@@ -161,11 +169,17 @@
                             placeholder="Enter Your Email"
                             required
                         />
-                        <input
-                            class="contact-form__btn"
-                            type="submit"
-                            value="Contact Me"
-                        />
+
+                        <div class="contact-form__btn-wrap">
+                            <input
+                                class="contact-form__btn"
+                                type="submit"
+                                value="Contact Me"
+                            />
+                            <div class="contact-form__btn-inner">
+                                <span>Contact Me</span>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>

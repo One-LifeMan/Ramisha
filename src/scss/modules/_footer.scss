@@ -1,5 +1,104 @@
 .footer {
+    color: $secondaryText;
+
     &__inner {
-        
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+        align-items: center;
+        padding: $spacing-lg 0;
+    }
+
+    &__logo {
+    }
+
+    & .logo__text {
+        fill: $secondaryText;
+    }
+}
+
+.copyright {
+    padding: $spacing-sm 0;
+    margin-top: $spacing-xs;
+    text-align: center;
+
+    &__text {
+        text-align: center;
+
+        & > span {
+            font-weight: 700;
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .footer {
+        background-color: $lightPrimaryColor;
+
+        &__inner {
+        }
+    }
+
+    .copyright {
+        background-color: $primaryColor;
+
+        &__text {
+            & > span {
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: $primaryColor;
+
+        &__inner {
+        }
+    }
+
+    .copyright {
+        background-color: $accentColor;
+
+        &__text {
+            & > span {
+            }
+        }
+    }
+}
+
+html.theme-light {
+    .footer {
+        background-color: $lightPrimaryColor;
+
+        &__inner {
+        }
+    }
+
+    .copyright {
+        background-color: $primaryColor;
+
+        &__text {
+            & > span {
+            }
+        }
+    }
+}
+
+html.theme-dark {
+    .footer {
+        background-color: $primaryColor;
+
+        &__inner {
+        }
+    }
+
+    .copyright {
+        background-color: $accentColor;
+
+        &__text {
+            & > span {
+            }
+        }
     }
 }
