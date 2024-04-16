@@ -6,6 +6,9 @@
 @import "./base/global";
 @import "./base/utils";
 @import "./base/icons";
+@import "./../../node_modules/swiper/swiper";
+@import "./../../node_modules/swiper/modules/navigation";
+@import "./../../node_modules/swiper/modules/pagination";
 @import "./animations/*";
 @import "./modules/**/*";
 @import "./adaptive-styles/**/*";

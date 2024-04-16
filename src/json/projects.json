@@ -1,0 +1,46 @@
+[
+    {
+        "img": "project-1",
+        "category": "Web"
+    },
+    {
+        "img": "project-2",
+        "category": "Web"
+    },
+    {
+        "img": "project-3",
+        "category": "Web"
+    },
+    {
+        "img": "project-4",
+        "category": "App"
+    },
+    {
+        "img": "project-5",
+        "category": "App"
+    },
+    {
+        "img": "project-6",
+        "category": "Graphic"
+    },
+    {
+        "img": "project-7",
+        "category": "Graphic"
+    },
+    {
+        "img": "project-8",
+        "category": "UX"
+    },
+    {
+        "img": "project-9",
+        "category": "UX"
+    },
+    {
+        "img": "project-10",
+        "category": "UX"
+    },
+    {
+        "img": "project-11",
+        "category": "App"
+    }
+]

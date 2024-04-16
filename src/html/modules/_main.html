@@ -104,8 +104,10 @@
                 </p>
 
                 <div class="projects__filter filter">
-                    <button class="filter__btn" data-filter="All">All</button>
-                    <button class="filter__btn _active" data-filter="UX">
+                    <button class="filter__btn _active" data-filter="All">
+                        All
+                    </button>
+                    <button class="filter__btn" data-filter="UX">
                         UI/UX Design
                     </button>
                     <button class="filter__btn" data-filter="App">
@@ -121,13 +123,13 @@
 
                 <div class="projects__results">
                     <script id="projectsTemplate" type="x-tmpl-mustache">
-                        <article class="projects__card project-card">
+                        <!-- <article class="projects__card project-card"> -->
                             <picture class="project-card__img">
-                                <source srcset="{{url + name}}.webp" type="image/webp">
-                                <source srcset="{{url + name}}.avif" type="image/avif">
-                                <img src="{{url + name}}.png" alt="{{name}}">
+                                <source srcset="{{url}}.webp" type="image/webp">
+                                <source srcset="{{url}}.avif" type="image/avif">
+                                <img src="{{url}}.jpg" alt="{{alt}}">
                             </picture>
-                        </article>
+                        <!-- </article> -->
                     </script>
                 </div>
             </div>
@@ -143,8 +145,56 @@
                     Etiam eu turpis molestie, dictum est a, mattis tellus.
                 </p>
             </div>
+            <div class="testimonials__slider-container">
+                <div class="testimonials__slider slider swiper">
+                    <div class="slider__wrap swiper-wrapper">
+                        <!-- Slides -->
+                        <script
+                            id="testimonialsTemplate"
+                            type="x-tmpl-mustache"
+                        >
+                            <!-- <div class="slider__slide slide swiper-slide"> -->
+                                <div class="slide__wrap">
+                                    <div class="slide__img-container">
+                                        <picture class="slide__img">
+                                            <source
+                                                type="image/webp"
+                                                srcset="
+                                                {{url}}.webp
+                                            "
+                                            />
+                                            <source
+                                                type="image/avif"
+                                                srcset="
+                                                {{url}}.avif
+                                            "
+                                            />
+                                            <img
+                                                src="{{url}}.jpg"
+                                                alt="{{alt}}"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <p class="slide__text">
+                                        {{text}}
+                                    </p>
+                                    <div class="slide__rating rating">
+                                        <span class="rating__star">★</span>
+                                        <span class="rating__star">★</span>
+                                        <span class="rating__star">★</span>
+                                        <span class="rating__star">★</span>
+                                        <span class="rating__star">★</span>
+                                    </div>
+                                </div>
+                            <!-- </div>; -->
+                        </script>
+                    </div>
+                </div>
+                <div class="slider__btn-prev swiper-button-prev"></div>
+                <div class="slider__btn-next swiper-button-next"></div>
 
-            <div class="testimonials__slider"></div>
+                <div class="slider__pagination swiper-pagination"></div>
+            </div>
         </div>
     </section>
 
