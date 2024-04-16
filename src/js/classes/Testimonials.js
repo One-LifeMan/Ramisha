@@ -72,7 +72,6 @@ export default class Testimonials {
         let height = Number.NEGATIVE_INFINITY;
         for (const slide of this.#RESULTS.children) {
             let slideHeight = slide.getBoundingClientRect().height;
-            console.log(slideHeight > height);
             if (slideHeight > height) {
                 height = slideHeight;
             }

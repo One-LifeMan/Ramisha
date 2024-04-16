@@ -3,6 +3,7 @@
 import "webp-in-css/polyfill.js";
 
 import "./modules/_preloader.js";
+import "./modules/_contactForm.js";
 
 import {} from "./constants/_libs.js";
 

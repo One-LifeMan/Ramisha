@@ -2,6 +2,7 @@
     position: relative;
     min-height: 100vh;
     padding: $spacing-lg 0;
+    overflow: hidden;
     background-image: url("./../img/my-photo-1.jpg");
     background-repeat: no-repeat;
     background-position: center;
