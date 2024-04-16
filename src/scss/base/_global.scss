@@ -32,27 +32,27 @@ a {
 }
 
 section {
-    padding: $spacing-lg 0;
+    padding: get-size(15, 60);
 }
 
 h1 {
-    font-size: 48px;
+    font-size: get-font-size(25, 48);
     font-style: italic;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 55px;
+    font-size: get-font-size(40, 55);
     font-weight: 600;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: get-font-size(24, 30);
     font-weight: 600;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: get-font-size(18, 24);
     font-weight: 600;
 }
 
@@ -104,7 +104,7 @@ img {
 .button {
     display: inline-block;
     padding: 18px 20px;
-    font-size: 21px;
+    font-size: get-font-size(16, 21);
     font-weight: 500;
     color: $primaryText;
     background-color: $accentColor;

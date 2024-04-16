@@ -57,7 +57,21 @@ export default class Testimonials {
             autoplay: {
                 delay: 3000,
             },
-            slidesPerView: 4,
+            slidesPerView: 1,
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                800: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1160: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
             roundLengths: true,
             pagination: {
                 el: ".swiper-pagination",

@@ -17,23 +17,14 @@ $spacing-xl: 8rem; // 128px
 /* FONT */
 $htmlFontSize: 16px;
 $mainFontFamily: "Montserrat";
-$mainFontSize: 24px;
+$mainFontSize: get-font-size(16, 24);
 $mainFontStyle: normal;
 $mainFontWeight: 400;
 $mainLineHeight: 1;
 
-@mixin get-font-size($min, $max) {
-    /* prettier-ignore */
-    font-size: clamp(
-        $min * 1px,
-        $min * 1px + ($max - $min) * ((100vw - $minViewport * 1px) / ($maxViewport - $minViewport)),
-        $max * 1px
-    );
-}
-
+// ---
 $uxSkillLineFill: 90%;
 $appSkillLineFill: 80%;
 $graphicSkillLineFill: 95%;
 $webSkillLineFill: 85%;
 $skillLineBorderWidth: 1px;
-$testimonialsSpacing: 80;

@@ -1,0 +1,26 @@
+@function get-font-size($min, $max) {
+    @return clamp(
+        $min * 1px,
+        $min * 1px + ($max - $min) *
+            ((100vw - $minViewport * 1px) / ($maxViewport - $minViewport)),
+        $max * 1px
+    );
+}
+
+@function get-size($min, $max) {
+    @return clamp(
+        $min * 1px,
+        $min * 1px + ($max - $min) *
+            ((100vw - $minViewport * 1px) / ($maxViewport - $minViewport)),
+        $max * 1px
+    );
+}
+
+// @mixin get-font-size($min, $max) {
+//     /* prettier-ignore */
+//     font-size: clamp(
+//         $min * 1px,
+//         $min * 1px + ($max - $min) * ((100vw - $minViewport * 1px) / ($maxViewport - $minViewport)),
+//         $max * 1px
+//     );
+// }
