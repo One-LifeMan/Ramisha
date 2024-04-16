@@ -3,9 +3,8 @@
 import "webp-in-css/polyfill.js";
 
 import "./modules/_preloader.js";
-import "./modules/_testimonials.js";
 
-import { Mustache } from "./constants/_libs.js";
+import {} from "./constants/_libs.js";
 
 import ScrollAnimator from "./classes/ScrollAnimator.js";
 import Projects from "./classes/Projects.js";
