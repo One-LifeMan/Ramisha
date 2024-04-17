@@ -4,14 +4,16 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        row-gap: $spacing-sm;
-        column-gap: $spacing-lg;
+        gap: get-size(20, 30);
+        justify-content: center;
     }
 
     &__item {
     }
 
     &__link {
+        font-size: 24px;
+
         &:hover {
             color: $secondaryText;
         }

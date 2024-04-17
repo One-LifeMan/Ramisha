@@ -37,7 +37,7 @@
 
 .skill {
     &__group {
-        margin-bottom: get-size(10, 32);
+        padding-bottom: get-size(10, 32);
     }
 
     &__title {
@@ -148,28 +148,27 @@
     border-radius: 10px;
     transition: all 0.8s ease-out 0.3s;
 
-    &:hover {
-        transition: all 0.3s ease-out 0s;
-        transform: rotate(6deg);
-    }
-
-    &:nth-child(even) {
+    @media (hover: hover) {
         &:hover {
-            transform: rotate(-6deg);
+            transition: all 0.3s ease-out 0s;
+            transform: rotate(6deg);
+        }
+
+        &:nth-child(even) {
+            &:hover {
+                transform: rotate(-6deg);
+            }
         }
     }
 
     &__icon {
         padding-bottom: get-size(50, 100);
         padding-left: get-size(50, 100);
-
-        // margin-bottom: $spacing-sm;
         background-repeat: no-repeat;
         background-size: contain;
     }
 
     &__title {
-        // margin-bottom: $spacing-sm;
     }
 
     &__desc {
@@ -243,8 +242,10 @@
             background-color: $accentColor;
         }
 
-        &:hover {
-            border-color: $accentColor;
+        @media (hover: hover) {
+            &:hover {
+                border-color: $accentColor;
+            }
         }
     }
 }
@@ -509,10 +510,12 @@
         display: flex;
         background-color: $lightPrimaryColor;
 
-        &:hover {
-            .contact-form__btn-inner {
-                width: 100%;
-                visibility: visible;
+        @media (hover: hover) {
+            &:hover {
+                .contact-form__btn-inner {
+                    width: 100%;
+                    visibility: visible;
+                }
             }
         }
     }

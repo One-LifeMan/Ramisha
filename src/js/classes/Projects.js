@@ -33,7 +33,7 @@ export default class Projects {
         this.#projects.push(project);
     }
 
-    showProjects(filter = "All", elem) {
+    showProjects(filter = "All") {
         this.#RESULTS.innerHTML = "";
 
         const fragment = document.createDocumentFragment();

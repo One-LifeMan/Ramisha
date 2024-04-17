@@ -4,49 +4,472 @@
 
 ._anim-active {
     opacity: 1;
-    transition:
-        transform 0.8s ease 0s,
-        opacity 0.8s ease 0s;
 }
 
-/* приклад приклад приклад */
+/* ------------------------------- header ------------------------------- */
 
-// .header {
-//     overflow: hidden;
+.header {
+    &__inner {
+    }
 
-//     &__logo {
-//         &._anim-item {
-//             transform: translate(0, 300%);
-//         }
+    &__top {
+    }
 
-//         &._anim-active {
-//             transform: translate(0, 0);
-//         }
-//     }
+    &__logo {
+    }
 
-//     @for $i from 1 through 6 {
-//         &__navigations._anim-item .menu__item:nth-child(#{$i}) {
-//             transform: translate(0, 300%);
-//         }
+    &__download-btn {
+    }
 
-//         &__navigations._anim-active .menu__item:nth-child(#{$i}) {
-//             transition:
-//                 transform 0.8s ease 0s + calc($i / 10),
-//                 opacity 0.8s ease 0s + calc($i / 10);
-//             transform: translate(0, 0);
-//         }
-//     }
+    &__bottom {
+    }
 
-//     &__btn {
-//         &._anim-item {
-//             transform: translate(0, 300%);
-//         }
+    &__content {
+    }
 
-//         &._anim-active {
-//             transition:
-//                 transform 0.8s ease 0.7s,
-//                 opacity 0.8s ease 0.7s;
-//             transform: translate(0, 0);
-//         }
-//     }
-// }
+    &__hello {
+        &._anim-item {
+            translate: -100% 0;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.1s,
+                opacity 0.8s ease-in 0.1s;
+            translate: 0 0;
+        }
+    }
+
+    &__desc {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.2s,
+                opacity 0.8s ease-in 0.2s;
+            translate: 0 0;
+        }
+    }
+
+    &__buttons {
+    }
+
+    &__hire-btn {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.3s,
+                opacity 0.8s ease-in 0.3s;
+            translate: 0 0;
+        }
+    }
+
+    &__contact-btn {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.4s,
+                opacity 0.8s ease-in 0.4s;
+            translate: 0 0;
+        }
+    }
+
+    &__overlay {
+    }
+}
+
+/* ------------------------------- social ------------------------------- */
+
+.social {
+    &__list {
+    }
+
+    &__item {
+        &._anim-item {
+            &:nth-child(1) {
+                translate: 300% 0;
+            }
+
+            &:nth-child(2) {
+                translate: 100% 0;
+            }
+
+            &:nth-child(3) {
+                translate: -100% 0;
+            }
+
+            &:nth-child(4) {
+                translate: -300% 0;
+            }
+        }
+
+        &._anim-active {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                transition:
+                    translate 0.8s ease-in 0s,
+                    opacity 0.8s ease-in 0s;
+                translate: 0 0;
+            }
+        }
+    }
+
+    &__link {
+    }
+}
+
+/* ------------------------------- about ------------------------------- */
+
+.about {
+    &__inner {
+    }
+
+    &__img-block {
+        overflow: hidden;
+    }
+
+    &__img {
+        &._anim-item {
+            translate: -100% 0;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__desc {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.2s,
+                opacity 0.8s ease-in 0.2s;
+            translate: 0 0;
+        }
+    }
+
+    &__skills {
+    }
+}
+
+.skill {
+    &__group {
+        overflow: hidden;
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 300%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__empty-line {
+        &._anim-item {
+            translate: 0 300%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__filled-line {
+    }
+
+    &__circle {
+    }
+}
+
+/* ------------------------------- services ------------------------------- */
+.services {
+    &__inner {
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__desc {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.2s,
+                opacity 0.8s ease-in 0.2s;
+            translate: 0 0;
+        }
+    }
+
+    &__cards {
+    }
+
+    &__card {
+    }
+}
+
+.service-card {
+    &._anim-item {
+        scale: 2;
+    }
+
+    &._anim-active {
+        transition:
+            scale 0.8s ease-in 0s,
+            opacity 0.8s ease-in 0s;
+        scale: 1;
+    }
+
+    &__icon {
+    }
+
+    &__title {
+    }
+
+    &__desc {
+    }
+}
+
+.ux-icon {
+}
+
+.app-icon {
+}
+
+.graphic-icon {
+}
+
+.web-icon {
+}
+
+/* ------------------------------- projects ------------------------------- */
+.projects {
+    &__inner {
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__desc {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.2s,
+                opacity 0.8s ease-in 0.2s;
+            translate: 0 0;
+        }
+    }
+
+    &__filter {
+    }
+
+    &__results {
+    }
+}
+
+.filter {
+    &__btn {
+    }
+}
+
+/* ------------------------------- testimonials ------------------------------- */
+.testimonials {
+    &__inner {
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__desc {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.2s,
+                opacity 0.8s ease-in 0.2s;
+            translate: 0 0;
+        }
+    }
+
+    &__slider-container {
+    }
+
+    &__slider {
+    }
+}
+
+.slider {
+    &__wrap {
+    }
+
+    &__btn-prev {
+    }
+
+    &__btn-next {
+    }
+
+    &__pagination {
+    }
+}
+
+/* ------------------------------- contact ------------------------------- */
+.contact {
+    &__inner {
+    }
+
+    &__title {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__desc {
+        &._anim-item {
+            translate: 0 100%;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0.2s,
+                opacity 0.8s ease-in 0.2s;
+            translate: 0 0;
+        }
+    }
+
+    &__form {
+    }
+}
+
+.contact-form {
+    &__group {
+    }
+
+    &__email {
+        &._anim-item {
+            translate: -100% 0;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__btn-wrap {
+        &._anim-item {
+            translate: 100% 0;
+        }
+
+        &._anim-active {
+            transition:
+                translate 0.8s ease-in 0s,
+                opacity 0.8s ease-in 0s;
+            translate: 0 0;
+        }
+    }
+
+    &__btn {
+    }
+
+    &__btn-inner {
+    }
+
+    &__message {
+    }
+}

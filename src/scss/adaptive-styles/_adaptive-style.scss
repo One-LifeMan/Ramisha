@@ -138,3 +138,29 @@
         }
     }
 }
+
+@media screen and (width <= 360px) {
+    .testimonials {
+        &__slider-container {
+            column-gap: 0;
+        }
+    }
+
+    .slider {
+        &__btn-prev {
+            display: none;
+        }
+
+        &__btn-next {
+            display: none;
+        }
+    }
+}
+
+@media screen and (width <= 310px) {
+    .testimonials {
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
