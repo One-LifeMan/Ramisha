@@ -1,0 +1,42 @@
+[
+    {
+        "img": "testimonials-1",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "rating": 4.5
+    },
+    {
+        "img": "testimonials-2",
+        "text": "Lorem ipsum dolor sit amet.",
+        "rating": 5
+    },
+    {
+        "img": "testimonials-3",
+        "text": "Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "rating": 3.5
+    },
+    {
+        "img": "testimonials-4",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "rating": 4
+    },
+    {
+        "img": "testimonials-1",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "rating": 4.5
+    },
+    {
+        "img": "testimonials-2",
+        "text": "Lorem ipsum dolor sit amet.",
+        "rating": 5
+    },
+    {
+        "img": "testimonials-3",
+        "text": "Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "rating": 3
+    },
+    {
+        "img": "testimonials-4",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "rating": 5
+    }
+]
