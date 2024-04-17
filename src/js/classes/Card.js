@@ -2,7 +2,7 @@ import { Mustache } from "../constants/_libs.js";
 
 export default class Card {
     #img;
-    #url = "../img/";
+    #url = "./img/";
 
     constructor(data) {
         this.#img = data.img;
