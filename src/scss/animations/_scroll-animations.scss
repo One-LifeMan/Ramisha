@@ -77,8 +77,13 @@
         &._anim-active {
             transition:
                 translate 0.8s ease-in 0.3s,
-                opacity 0.8s ease-in 0.3s;
+                opacity 0.8s ease-in 0.3s,
+                scale 0.8s ease 0s;
             translate: 0 0;
+
+            &:hover {
+                transition: scale 0.3s ease-out 0s;
+            }
         }
     }
 
@@ -90,8 +95,13 @@
         &._anim-active {
             transition:
                 translate 0.8s ease-in 0.4s,
-                opacity 0.8s ease-in 0.4s;
+                opacity 0.8s ease-in 0.4s,
+                scale 0.8s ease 0s;
             translate: 0 0;
+
+            &:hover {
+                transition: scale 0.3s ease-out 0s;
+            }
         }
     }
 
