@@ -278,7 +278,8 @@
     &._anim-active {
         transition:
             scale 0.8s ease-in 0s,
-            opacity 0.8s ease-in 0s;
+            opacity 0.8s ease-in 0s,
+            rotate 0.8s ease-out 0.3s;
         scale: 1;
     }
 
