@@ -9,7 +9,7 @@ export default class Testimonials {
     testimonialsSlider;
 
     init() {
-        fetch("../json/testimonials.json")
+        fetch("./../json/testimonials.json")
             .then((response) => response.json())
             .then((data) => {
                 for (const testimonial of data) {

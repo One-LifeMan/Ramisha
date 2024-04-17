@@ -7,7 +7,7 @@ export default class Projects {
     #TEMPLATE = document.querySelector("#projectsTemplate").innerHTML;
 
     init() {
-        fetch("../json/projects.json")
+        fetch("./../json/projects.json")
             .then((response) => response.json())
             .then((data) => {
                 for (const project of data) {
