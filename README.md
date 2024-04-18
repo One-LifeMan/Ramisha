@@ -1,6 +1,6 @@
 <div style="background-color:#262626; padding:20px; border-radius:20px; color:#fff;">
     <h1>Mumair</h1>
-    <p>Простий лендінг створений 12.04.2024</p>
+    <p>Простий лендінг створений 17.04.2024</p>
     <img src="./readme/screenshot.png" alt="screenshot"></img>
     <div style="padding-top:20px;">
         <img src="./readme/technologies/visualstudiocode.svg" alt="visualstudiocode" style="height:40px;">
